@@ -1,0 +1,65 @@
+// Variables
+
+$font-openSans: 'Open Sans', sans-serif;
+$font-monserrat: 'Montserrat', sans-serif;
+
+$header-size: 2em;
+$font-color: #343434;
+$content-width: 1200px;
+
+$white: #fff;
+$deepskyblue: #2accff;
+
+$btn-header-size: 15px;
+$btn-weight: bold;
+
+
+$btn1-color1: #0a5ebd;
+$btn1-color2:#2bc9ff;
+$btn1-color3: #00e1e4;
+$gradient-btn1: linear-gradient(to right, $btn1-color1 -51%, $btn1-color2, $btn1-color3); 
+
+$btn2-color1:#ff008a;
+$btn2-color2:#510f6a;
+$gradient-btn2: linear-gradient(30deg, $btn2-color1 10%, $btn2-color2);
+
+$primary-color: #002846;
+$secondary-color: skyblue;
+
+$aqua: #03fdf4;
+$black: #000;
+$blue: #0006FF;
+$catalina_blue: #031b69;
+$chartreuse: #78FF00;
+$cornflower_blue: #2accff;
+$cyan : #24D6FE;
+$cyan_aqua: #00FFF0;
+$deep_cove: #081641;
+$deep_sapphire: #051C67;
+$dodger_blue: #2bc9ff;
+$gulf_blue: #05124c;
+$helio_trope: #CA3AF9;
+$international_orange: #FF5502;
+$jacksons_purple: #19327d;
+$jagger: #510f6a;
+$lochmara: #0072ba;
+$paris_m: #25066B;
+$persian_blue: #1c47c8;
+$persian_rose: #F42AB4;
+$rose: #ff008a;
+$salem: #068941;
+$stratos: #010648;
+$violent_violet: #2A0954;
+$wild_blue_yonder: #7080b1;
+$white: #fff;
+$yellow : #ffff00;
+$bright_turqoise: #0adfeb;
+$denim: #1781d4;
+$blue_bayoux: #4E5C7A;
+
+$gradient_yellow_interorange: linear-gradient(to right, $yellow, $international_orange); 
+$gradient_deep_aqua: linear-gradient(to left, $deep_sapphire, $aqua); 
+$gradient_salem_chartreuse: linear-gradient(to right, $salem, $chartreuse); 
+$gradient_persian_violet: linear-gradient(to bottom, $persian_rose, $violent_violet); 
+$gradient_helio_paris: linear-gradient(to bottom, $helio_trope, $paris_m); 
+$gradient_cyan_blue: linear-gradient(to left, $cyan_aqua, $blue); 

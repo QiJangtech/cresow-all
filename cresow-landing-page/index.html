@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Cresow Landing Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.1.0/css/jquery.countdown.min.css">	 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+			<a class="navbar-brand" href="#"><img src="./images/CresowLogo.png" alt=""></a>
+			<ul class="navbar-nav mr-auto"></ul>
+			<ul class="navbar-nav d-none d-lg-flex d-xl-flex">
+				<li class="nav-item active">
+					<a class="nav-link" target="_blank" href="https://s3-ap-southeast-1.amazonaws.com/cresow-cdn/Cresow-whitepaper.pdf">
+						<i class="far fa-file-alt"></i>
+						White Paper
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="far fa-comments"></i>
+						Pitch Deck
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-share-alt"></i>
+						Social
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Facebook</a>
+						<a class="dropdown-item" href="#">Twitter</a>
+						<a class="dropdown-item" href="#">Youtube</a>
+					</div>
+				</li>
+				<button type="button" id="signupbutton" class="btn btn-primary text-uppercase">sign up</button>
+				<button type="button" id="loginbutton" class="btn btn-primary text-uppercase">Login</button>
+			</ul>
+			<div id="nav-icon1" class="d-lg-none d-xl-none">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+		<div id="hamburger-menu" class="">
+			<ul class="navbar-nav d-lg-flex d-xl-flex hamburger-menu-nav">
+				<li class="nav-item">
+					<a class="nav-link" target="_blank" href="https://s3-ap-southeast-1.amazonaws.com/cresow-cdn/Cresow-whitepaper.pdf">
+						<i class="far fa-file-alt"></i>
+						White Paper
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="far fa-comments"></i>
+						Pitch Deck
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="fa fa-share-alt"></i>
+						Social
+					</a>
+				</li>
+				<button id="signupbutton" type="button" class="btn btn-primary text-uppercase">sign up</button>
+				<button id="loginbutton" type="button" class="btn btn-primary text-uppercase">Login</button>
+			</ul>
+		</div>
+	</header>
+	<div id="main1" class="main">
+
+		<!-- The Modal Register -->
+		<div id="signupModal" class="modal">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h3>Sign up</h3> -->
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<div class="icon-user text-center">
+							<!-- <i class="fas fa-users fa-7x"></i> -->
+							<img src="./images/CresowLogo.png" alt="cresow logo" />
+						</div>
+						<form class="form" role="form" autocomplete="off">
+
+							<div class="field--adjust-width text-center">
+								<input id="sign-fname" type="text" class="form-control" placeholder="first name">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-lname" type="text" class="form-control" placeholder="last name">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-refname" type="text" class="form-control" placeholder="referral id">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-city" type="text" class="form-control" placeholder="city">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-country" type="text" class="form-control" placeholder="country">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-phone" type="number" class="form-control" placeholder="phone">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-email" type="email" class="form-control" placeholder="email">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="sign-password" type="password" class="form-control" placeholder="password">
+
+								<a href="javascript:void(0);" id="haveaccount" class="float-left login--new-user">Have an account?</a>
+								<span id="errorsignup" class="float-right" style="color: #ce007d"></span>
+							</div>
+
+							<div class="form-group button--adjust-width py-4">
+								<button type="button" id="signupsubmit" class="btn btn-success btn-lg float-left">Sign up</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- The Modal Login -->
+		<div id="loginModal" class="modal">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h3>Sign up</h3> -->
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="icon-user text-center">
+								<!-- <i class="fas fa-users fa-7x"></i> -->
+								<img src="./images/CresowLogo.png" alt="cresow logo" />
+							</div>
+
+							<div class="field--adjust-width text-center">
+								<input id="log-email" type="text" class="form-control" placeholder="email">
+							</div>
+							<div class="field--adjust-width text-center">
+								<input id="log-password" type="password" class="form-control" placeholder="passsword">
+
+								<a href="javascript:void(0);" id="newuser" class="float-left login--new-user">New user?</a>
+							</div>
+
+							<div class="button--adjust-width py-4">
+								<button type="button" id="loginsubmit" class="btn btn-success btn-lg">
+									Login
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- The Modal Success -->
+		<div id="successModal" class="modal">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h3>Sign up</h3> -->
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+					<div class="modal-body">
+						<div class="icon-user text-center">
+							<i class="far fa-thumbs-up fa-7x"></i>
+						</div>
+						<div class="text-center">
+							Success login. Now you can login using your username and password.
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- The Modal Video -->
+		<!-- Modal -->
+		<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document" style="max-width: 800px;">
+		    <div class="modal-content">
+
+		      <div class="modal-body" style="padding: 0">
+		       <button type="button" class="close close-video" style="position: absolute; right: -25px; top: -28px; color: '#db001';">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		        <!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+						  <iframe id="videoCresow"src="https://www.youtube.com/embed/rFyoT86tBvk?enablejsapi=1&version=3&playerapiid=ytplayer" allowscriptaccess="always">></iframe>
+						</div>
+		      </div>
+
+		    </div>
+		  </div>
+		</div>
+
+
+		<section id="home">
+			<div class="home-wrapper">
+
+				<div class="container">
+					<div class="row">
+						<div class="offset-md-2 col-md-8">
+							<div class="text-center">
+								<h1><span>Crypto</span> Social Bridge</h1>
+								<p>Crypto social platform solving real life problems by bridging the gaps between cryptocurrency and fiat with our crypto financial instruments</p>
+								<p>
+									<a href="#" id="videoclick">
+										<img src="./images/icon-play.png" alt="">
+										Watch Video
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grow">
+						<div class="gcol gradient1">
+							<p>pre-ICO ends in</p>
+							<div class="countdown-container">3rd october 2018</div>
+						</div>
+						<div class="gcol gradient2">
+								<div id="token-price-progress">
+									<div class="top-label">
+										<span>Soft Cap</span>
+										<span>Hard Cap</span>
+									</div>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 29%"></div>
+										<div class="progress-bar bg-success" role="progressbar" style="width: 29%"></div>
+									</div>
+									<div class="bottom-label">
+										<span>USD0</span>
+										<span class="marker" style="left:29%;">USD100K</span>
+										<span class="marker" style="left:58%;">USD3.8M</span>
+										<span>USD38M</span>
+									</div>
+								</div>
+							<p>
+								Token Price 1 CRX = 0.10 USD
+								<a href="#" class="btn btn-danger">Participate now</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="benefits">
+			<div class="container">
+				<div class="text-center">
+					<h2>Free your crypto</h2>
+					<p>Stop getting ripped off. Save your money with our crypto-financial instruments.</p>
+				</div>
+				<div class="section-content">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-12 col-sm-6 order-sm-1" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-social.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-2" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresow Social</h3>
+							</div>
+							<div class="benefit-content">
+								<p>A social peer-to-peer cryptocurrency platform.<br>First of its kind.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-4" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-trade.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-3 text-right" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresow Trade</h3>
+							</div>
+							<div class="benefit-content">
+								<p>Connecting buyers and sellers through its P2P Cryptocurrency exchange, with no trading fees. Ease of mind with Cresow escrow tech.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-5" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-lending.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-6" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresow Lending</h3>
+							</div>
+							<div class="benefit-content">
+								<p>Connecting lenders and borrowers through its P2P lending platform with lucrative rates again protected by Cresow escrow tech.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-8" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-pay.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-7 text-right" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresowpay</h3>
+							</div>
+							<div class="benefit-content">
+								<p>Gives freedom to make payments and perform transaction with virtual currencies directly and conveniently at anywhere around the world.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-9" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-otc.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-10" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresow OTC</h3>
+							</div>
+							<div class="benefit-content">
+								<p>OTC Over the counter' crypto-currency to fiat exhanger. Make secure high volume trades at the luxury of our OTC lounge.</p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-12" data-aos="fade-up">
+							<div class="benefit-image">
+								<img src="./images/cresow-investment.png" alt="foo" srcset="">
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 order-sm-11 text-right" data-aos="fade-in">
+							<div class="benefit-title">
+								<h3>Cresow Investment</h3>
+							</div>
+							<div class="benefit-content">
+								<p>Connecting businesses to investors through its business funding platform and tokenishing real world assets under Cresow Blockchain</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="ecosystem">
+			<div class="container">
+				<div class="text-center">
+					<h2>A Peer to Peer Ecosystem</h2>
+					<p data-aos="fade-up" data-aos-duration="2000">Always secure and transparent</p>
+					<div class="eco-box" data-aos="fade-up" data-aos-duration="2000">
+						<img src="./images/ecosystem.png" alt="" class="img-fluid">
+						<div class="eco-slider">
+							<!-- <a href="./images/slide1.jpeg">
+								<img src="./images/slide1.jpeg" alt="">
+							</a> -->
+							<a href="./images/slide2.jpeg">
+								<img src="./images/slide2.jpeg" alt="">
+							</a>
+							<a href="./images/slide3.jpeg">
+								<img src="./images/slide3.jpeg" alt="">
+							</a>
+							<!-- <a href="./images/slide4.jpeg">
+								<img src="./images/slide4.jpeg" alt="">
+							</a> -->
+							<a href="./images/slide5.jpeg">
+								<img src="./images/slide5.jpeg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<!--<p>
+						<a href="#" class="btn btn-danger">Watch Live Demo</a>
+						<a href="#" class="btn btn-primary">Request A Live Demo</a>
+					</p> -->
+				</div>
+			</div>
+		</section>
+		<section id="features">
+			<div class="container">
+				<div class="text-center">
+					<h2>Why Cresow</h2>
+					<!-- <p>Lorem ipsum simply dummy text of the printing and typesetting industry.</p> -->
+					<div class="row">
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-interactive.png" alt="">
+								</div>
+								<h3>Interactive</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-secure.png" alt="">
+								</div>
+								<h3>Secure</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-fair.png" alt="">
+								</div>
+								<h3>Fair</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-community-owned.png" alt="">
+								</div>
+								<h3>Community Owned</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-supportive.png" alt="">
+								</div>
+								<h3>Supportive</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feat">
+								<div class="img">
+									<img src="./images/why-transparent.png" alt="">
+								</div>
+								<h3>Transparent</h3>
+								<!-- <p>Lorem ipsum dolor sit amet was a popular dummy text in 1500’s.</p> -->
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<a href="#" class="btn btn-danger text-capitalize">book a demo</a>
+						</div>
+						<div class="col-md-4"></div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+	</div>
+	<section id="roadmap">
+		<div class="container">
+			<div class="text-center">
+				<h2> ROADMAP </h2>
+				<!-- <p> Lorem Ipsum is simply a dummy text of the printing and typesetting industry. </p> -->
+			</div>
+			<div class="roadmap-slider" data-aos="fade-up" data-aos-duration="2000">
+				<div class="roadmap-slide">
+					<div class="roadmap-group">
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> IDEATION BEGUN </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2018</span>
+								<span class="month">JULY</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> KICK OFF DEVELOPMENT </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2018</span>
+								<span class="month">SEPTEMBER</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> PRE-ICO BEGINS </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2018</span>
+								<span class="month">OCTOBER</span>
+							</span>
+							<span class="track"></span>
+							<span class="point"></span>
+						</div>
+					</div>
+				</div>
+				<div class="roadmap-slide">
+					<div class="roadmap-group">
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> CRESOW TRADE VERSION 1.0 </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2018</span>
+								<span class="month">NOVEMBER</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> ICO LAUNCH </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2019</span>
+								<span class="month">JANUARY</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> CRESOW LENDING VERSION 1.0 </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2019</span>
+								<span class="month">FEBRUARY</span>
+							</span>
+							<span class="track"></span>
+						</div>
+					</div>
+				</div>
+				<div class="roadmap-slide">
+					<div class="roadmap-group">
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> FIRST CRESOW OTC </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2019</span>
+								<span class="month">June</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> CRESOW PAY LAUNCH </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2019</span>
+								<span class="month">SEPTEMBER</span>
+							</span>
+							<span class="track"></span>
+						</div>
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> CRESOW INVESTMENT </p>
+							<!-- <p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p> -->
+							<span class="time-point">
+								<span class="year">2020</span>
+								<span class="month">JANUARY</span>
+							</span>
+							<span class="track"></span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="roadmap-slide">
+					<div class="roadmap-group">
+						<div class="roadmap-item">
+							<i></i>
+							<p class="title"> Title of the milestone </p>
+							<p class="desc"> Lorem Ipsum is simply a dummy text of the printing and typesetting industry </p>
+							<span class="time-point">
+								<span class="year">2018</span>
+								<span class="month">January</span>
+							</span>
+							<span class="track"></span>
+						</div>
+					</div>
+				</div> -->
+			</div>
+			<div class="roadmap-control text-center">
+				<span>
+					<button type="button" class="btn btn-danger previous"><i class="fas fa-arrow-left"></i></button>
+					<button type="button" class="btn btn-primary next"><i class="fas fa-arrow-right"></i></button>
+				</span>
+			</div>
+		</div>
+	</section>
+	<div id="main2" class="main">
+		<section id="token-sale">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Participate in the CRX Token Sale</h2>
+						<h3>70% DISCOUNTS FOR PRE-ICO CONTRIBUTOR</h3>
+						<p>To support the development and launch of Cresow , we're holding a CRX pre-ICO in which contributors will receive 70% discount on the first 100 Million CRX Token.</p>
+						<p>Discounts will be reduced by 10% based on progressive sales. We will present the full details in the sign up confirmation and welcome emails.</p>
+						<p>We will present full details in the sign-up confirmation and welcome emails.</p>
+						<!-- <p><a href="#" class="btn btn-danger text-uppercase">Sign up now</a></p> -->
+					</div>
+					<div class="col-md-6">
+						<img src="./images/token-sale.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="token-sale-dates">
+			<div class="container">
+				<div class="text-center">
+					<h2>Cresow Token Sale Key Dates</h2>
+					<div id="presale-preview">
+						<div class="d-none d-xl-flex">
+							<div class="presale-phase p-3 flex-fill text-left">
+								PRE-ICO
+							</div>
+							<div class="ico-phase p-3 flex-fill text-left">
+								ICO
+							</div>
+						</div>
+						<div class="presale-timeline">
+							<div class="row">
+								<div class="col-12 col-lg-2">
+									<div class="presale-item text-right">
+										<div class="text-uppercase">
+											<h4>pre-ico</h4>
+											<h5>70% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<div class="presale-item text-right">
+										<div class="text-uppercase">
+											<h4>pre-ico 1</h4>
+											<h5>60% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<div class="presale-item past text-right">
+										<div class="text-uppercase">
+											<h4>ico 1</h4>
+											<h5>50% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<div class="presale-item past text-right">
+										<div class="text-uppercase">
+											<h4>ico 2</h4>
+											<h5>40% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<div class="presale-item past text-right">
+										<div class="text-uppercase">
+											<h4>ico 3</h4>
+											<h5>30% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-2">
+									<div class="presale-item past text-right">
+										<div class="text-uppercase">
+											<h4>ico 4</h4>
+											<h5>20% discounts</h5>
+										</div>
+										<div>
+											<h6>100 M CRX</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="progress-line">
+							<div class="progress-status"></div>
+						</div>
+					</div>
+					<div id="presale-details" class="row">
+						<div class="col-lg-8 col-12">
+							<div class="token-round-box">
+								<div class="token-round-box-header text-left">
+									<div class="d-flex align-items-stretch">
+										<div class="p-3 flex-fill header">
+											<h3 class="text-uppercase">round 1</h3>
+											<h4 class="text-capitalize">current round</h4>
+										</div>
+										<div class="p-3 flex-fill bonus text-right">
+											<h3>70%</h3>
+											<h4>Discounts</h4>
+										</div>
+									</div>
+								</div>
+								<div class="token-round-box-content text-left">
+									<div class="row">
+										<div class="col-md-6 col-12">
+											<h5>Start</h5>
+											<h6>Oct 03, 2018 (9AM GMT)</h6>
+											<br>
+											<h5>Token for Sale</h5>
+											<h6>100,000,000.00 CRX</h6>
+											<br>
+											<h5>Acceptable Currencies</h5>
+											<h6>ETH</h6>
+										</div>
+										<div class="col-md-6 col-12">
+											<h5>End</h5>
+											<h6>100,000,000.00 CRX</h6>
+											<br>
+											<h5>Token Exchange Rate</h5>
+											<h6>1 CRX = 0.03 USD</h6>
+											<br>
+											<h5>Minimum Transaction Amount</h5>
+											<h6>1 ETH</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-12">
+							<div class="token-round-box">
+								<div class="token-round-box-header text-left">
+									<div class="d-flex align-items-stretch">
+										<div class="p-3 flex-fill header">
+											<h3 class="text-uppercase">round 2</h3>
+											<h4 class="text-capitalize">next round</h4>
+										</div>
+										<div class="p-3 flex-fill bonus text-right">
+											<h3>60%</h3>
+											<h4>Discounts</h4>
+										</div>
+									</div>
+								</div>
+								<div class="token-round-box-content text-left">
+									<div class="row">
+										<div class="col-12">
+											<h5>Start</h5>
+											<h6>next 100,000,000.00 CRX</h6>
+											<br>
+											<h5>Token for Sale</h5>
+											<h6>100,000,000.00 CRX</h6>
+											<br>
+											<h5>Acceptable Currencies</h5>
+											<h6>ETH</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section id="crx" class="main">
+		<div class="container">
+			<div class="text-center">
+				<h2>Cresow CRX</h2>
+			</div>
+			<div class="section-content">
+				<div class="row">
+					<div class="col-12 col-md-6 value-creation">
+						<h4>The Value of Creation</h4>
+						<p>
+							Cressow CRX is an Ethereum ERC-20 token that serves as the crytocurrency used for all Cresow transactions.
+						</p>
+						<!-- <p>
+							Cresow pays royalties in CRX every time a distributor licenses content or a consumer
+							buys or rents platform content. This model is similiar to existing distribution and streaming models
+							and uses CRS as its cryptocurrency. This makes project revenue transparent for all stakeholders.
+							As a blockchain technology, CRS ensures that all project contributors, and Cresow itself, receive their
+							fair share of their project's income.
+						</p> -->
+					</div>
+					<div class="col-12 col-md-6 token-spec">
+						<h4>Token Specification</h4>
+						<div class="row">
+							<div class="col-4">
+								<h5>Token Name</h5>
+								<h6 class="text-uppercase">cresow</h6>
+							</div>
+							<div class="col-4">
+								<h5>Token Symbol</h5>
+								<h6>CRX</h6>
+							</div>
+							<div class="col-4">
+								<h5>Token Supply</h5>
+								<h6>999,999,999.00</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<h5>Token Decimal Points</h5>
+								<h6>2</h6>
+							</div>
+							<div class="col-4">
+								<h5>Initial Token Price</h5>
+								<h6>0.10 USD</h6>
+							</div>
+							<div class="col-4">
+								<h5>Token Sale Address</h5>
+								<h6>TBD</h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-4">
+								<h5>Hard Cap</h5>
+								<h6>38 MILLIONS USD</h6>
+							</div>
+							<div class="col-4"></div>
+							<div class="col-4">
+								<button type="button" class="btn btn-primary text-uppercase">sign up now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row cresow-crx-chart">
+				<div class="col-12 col-md-6">
+					<div class="chart">
+						<svg id="crx-chart"></svg>
+						<span class="current-value">
+							<span class="value">0</span>
+							<span>%</span>
+						</span>
+					</div>
+					<ul class="crx-chart-list">
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Bounty</span>
+								<span class="value">5 %</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Future</span>
+								<span class="value">15 %</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Core Team</span>
+								<span class="value">20 %</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Public Sale</span>
+								<span class="value">65 %</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="chart">
+						<svg id="btc-chart"></svg>
+						<span class="current-value">
+							<span class="value">0</span>
+							<span> %</span>
+						</span>
+					</div>
+					<ul class="btc-chart-list">
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Misc Spending</span>
+								<span class="value">10%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Infrastructure Expenditure</span>
+								<span class="value">20%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Marketing &amp; Business Development</span>
+								<span class="value">35%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Technology Development</span>
+								<span class="value">35%</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <div id="main3" class="main">
+		<section id="founders">
+			<div class="container">
+				<div class="text-center">
+					<h2>Team</h2>
+				</div>
+			</div>
+		</section>
+		<section id="team-advisors">
+			<div class="container">
+				<div class="text-center">
+					<h3>Cresow Team &amp; Advisors</h3>
+				</div>
+			</div>
+		</section>
+		<section id="partners">
+			<div class="container">
+				<div class="text-center">
+					<h2>Partners</h2>
+				</div>
+			</div>
+			<div class="container logo">
+				<div class="row">
+					<div class="col partner">
+						<img src="./images/airdrop-alert.png" alt="">
+					</div>
+					<div class="col partner">
+						<img src="./images/capacity.png" alt="">
+					</div>
+					<div class="col partner">
+						<img src="./images/volker.png" alt="">
+					</div>
+					<div class="col partner">
+						<img src="./images/stell-kiwi.png" alt="">
+					</div>
+					<div class="col partner">
+						<img src="./images/coin-market-launch.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div> -->
+	<section id="community-rewards" class="main">
+		<div class="container text-center">
+			<h2>Community Rewards</h2>
+			<p>Participate in our Community Rewards program and earn CRX.</p>
+			<p>We will reward you with CRX for helping us spread the word about CRESOW and our token sale.<br/>We will distribute 5% of issued CRX as follows:</p>
+			<div class="row community-chart">
+				<div class="community-item-list">
+					<div class="chart">
+						<svg id="community-rewards-chart"></svg>
+						<span class="current-value">
+							<span class="value">0</span>
+							<span>%</span>
+						</span>
+					</div>
+					<ul class="community-chart-list">
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Social Media</span>
+								<span class="value">40%</span>
+							</div>
+							<ul>
+								<li class="d-flex justify-content-between">
+									<span class="name">Medium</span>
+									<span class="value">10%</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span class="name">Telegram</span>
+									<span class="value">10%</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span class="name">Twitter/VK</span>
+									<span class="value">10%</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span class="name">Facebook/Instagram</span>
+									<span class="value">5%</span>
+								</li>
+								<li class="d-flex justify-content-between">
+									<span class="name">LinkedIn</span>
+									<span class="value">5%</span>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Team Members & Advisors</span>
+								<span class="value">10%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Reserve</span>
+								<span class="value">5%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">CRX Boost</span>
+								<span class="value">20%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">Community Rewards</span>
+								<span class="value">10%</span>
+							</div>
+						</li>
+						<li>
+							<div class="d-flex justify-content-between">
+								<span class="name">BTC Token Purchases</span>
+								<span class="value">15%</span>
+							</div>
+						</li>
+					</ul>
+					<div class="link-community">
+						<a href="#" class="btn btn-danger">Learn More</a>
+						<a href="#" class="btn btn-primary">Join Our Group</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="subscribe">
+		<div class="container subscribe-wrapper">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-5 subscribe-information">
+					<h2>Don't miss out, Stay updated</h2>
+					<h3>Sign up for updates and market news. Subscribe to our</h3>
+					<h3>newsletter and recieve update about ICOs and crypto tips.</h3>
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-7 subcsribe-form">
+					<form action="" method="" class="form-inline">
+						<div class="form-group">
+							<input type="email" class="form-control" id="email" placeholder="&#9993; Your email address">
+						</div>
+						<button type="submit" class="btn btn-default">Join Cresow</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<nav class="dot-nav">
+		<ul class="dot-nav--list list-unstyled">
+			<li class="dot-nav--item is-active"><a href="#home" class="dot-nav--link">Home</a></li>
+			<li class="dot-nav--item"><a href="#benefits" class="dot-nav--link">Products</a></li>
+			<li class="dot-nav--item"><a href="#features" class="dot-nav--link">Why Cresow?</a></li>
+			<li class="dot-nav--item"><a href="#roadmap" class="dot-nav--link">Project Roadmap</a></li>
+			<li class="dot-nav--item"><a href="#token-sale" class="dot-nav--link">Token Sale</a></li>
+			<li class="dot-nav--item"><a href="#token-sale-dates" class="dot-nav--link">Token Roadmap</a></li>
+			<li class="dot-nav--item"><a href="#crx" class="dot-nav--link">Cresow CRX</a></li>
+			<li class="dot-nav--item"><a href="#founders" class="dot-nav--link">Team</a></li>
+			<li class="dot-nav--item"><a href="#community-rewards" class="dot-nav--link">Community Rewards</a></li>
+			<li class="dot-nav--item"><a href="#subscribe" class="dot-nav--link">Subscription</a></li>
+		</ul>
+	</nav>
+	<footer>
+		<div class="footer-main">
+			<div class="container">
+				<img class="footer-logo" src="./images/CresowLogo.png" alt="">
+				<div class="footer-information">
+					<h4>We're a team of innovators dedicated to helping creative visionaries produce</h4>
+					<h4>and profit from, premium peer to peer services.</h4>
+				</div>
+				<div class="footer-social-icon">
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+				<div class="footer-menu-links">
+					<h4>
+						<a href="#">Pitch Deck </a> |
+						<a target="_blank" href="https://s3-ap-southeast-1.amazonaws.com/cresow-cdn/Cresow-whitepaper.pdf">White Paper</a> |
+						<a target="_blank" href="https://s3-ap-southeast-1.amazonaws.com/cresow-cdn/Privacy+policy%2C+Cresow.pdf"> Privacy Policy </a>
+					</h4>
+				</div>
+				<div class="footer-contact">
+					<h4 class="mail">hello@cresow.com<a href="tel:+4315122053"></a></h4>
+
+					<a href="http://cresow.io/" target="_blank" style="color: #209dd6">
+						<h4>www.cresow.io</h4>
+					</a>
+				</div>
+				<div class="footer-to-top">
+					<a href="#home" id="scroll"><img class="to-top" src="./images/go-to-top.png" alt=""/></a>
+				</div>
+				<div class="footer-copyright">
+					<h4>Copyright &copy; Cresow 2018. All Rights Reserved.</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.1.0/js/jquery.plugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.1.0/js/jquery.countdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

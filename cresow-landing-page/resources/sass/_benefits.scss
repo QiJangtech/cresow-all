@@ -1,0 +1,27 @@
+#benefits {
+    .section-title, .section-subtitle, .benefit-image {
+        text-align: center;
+    }
+    
+    .section-content{
+        .benefit-image {
+            margin: 25px;
+        }
+        .benefit-title {
+            margin-top: 0;
+        }
+        .benefit-content {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #benefits {
+        .section-content{
+            .row>div>* {
+                text-align: center;
+            }
+        }
+    }
+} 

@@ -1,0 +1,28 @@
+#partners{
+    .card{
+        background: transparent;
+    }
+    .partner img{
+        width: 90%;
+    }
+    .logo{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media(max-width: 992px) and (min-width: 768px){
+        .partner img{
+            width: 90% !important;
+        }
+    }
+    @media(max-width: 768px){
+        .partner img{
+            width: initial;
+        }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+        .partner img{
+            width: 90% !important;
+        }
+    }
+}

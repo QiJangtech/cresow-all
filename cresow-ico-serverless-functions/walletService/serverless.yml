@@ -1,0 +1,76 @@
+service: walletService
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, self:custom.defaultStage}
+  profile: ${self:custom.profiles.${self:provider.stage}}
+  region: us-east-1
+  # environment:
+    # set environment variable to be accessed inside walletHandler.js file
+
+# variables
+custom:
+  defaultStage: dev
+  profiles:
+    dev: qwsEngineerDev
+    prod: qwsEngineerProd
+
+functions:
+  app:
+    handler: walletHandler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+  getDepositInfobyId:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/depositInfo/{proxy+}'
+  getWithdrawalInfobyId:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/withdrawalInfo/{proxy+}'
+  getWalletInfo:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/{proxy+}'
+  getDepositList:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/deposit/{proxy+}'
+  getWithdrawalList:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/withdrawal/{proxy+}'
+  # createWallet:
+  #   handler: walletHandler.handler
+  #   events:
+  #     - http: 'POST /wallet'
+  addPublicKey:
+    handler: walletHandler.handler
+    events:
+      - http: 'PUT /wallet'
+  newDeposit:
+    handler: walletHandler.handler
+    events:
+      - http: 'POST /wallet/deposit'
+  cryptoConvert:
+    handler: walletHandler.handler
+    events:
+      - http: 'POST /crypto/{proxy+}'    
+  createWithdrawal:
+    handler: walletHandler.handler
+    events:
+      - http: 'POST /wallet/withdrawal'
+  completeDeposit:
+    handler: walletHandler.handler
+    events:
+      - http: 'PUT /wallet/completeDeposit'
+  updateWithdrawal:
+    handler: walletHandler.handler
+    events:
+      - http: 'PUT /wallet/withdrawal'  
+  getTransactionHistoryById:
+    handler: walletHandler.handler
+    events:
+      - http: 'GET /wallet/transactionHistory/{proxy+}'

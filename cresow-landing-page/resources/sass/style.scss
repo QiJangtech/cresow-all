@@ -1,0 +1,92 @@
+@import 'base';
+@import 'fonts';
+@import 'header';
+@import 'sidebar';
+@import 'home';
+@import 'ecosystem';
+@import 'features';
+@import 'token_sale';
+@import 'token_sale_dates';
+@import 'benefits';
+@import 'footer';
+@import 'crx';
+@import 'partners';
+@import 'community';
+@import 'subscribe';
+@import 'roadmap';
+@import 'bootstrap-override';
+
+body {
+	margin: 0;
+	color: $white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	background-color: #051c67;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 48px;
+	color: $cornflower_blue;
+
+	span {
+		font-weight: normal;
+		color: $white;
+	}
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+	color: $cornflower_blue;
+}
+
+.main {
+	background-size: 100% auto !important; 
+}
+
+#main1 {
+	background: url('../images/bg1.jpg') no-repeat center top;
+}
+
+section#roadmap {
+	background: #051853 url('../images/bg2.jpg') no-repeat center top;
+}
+
+#main2 {
+	background: url('../images/bg3.jpg') no-repeat center top;
+}
+
+#main3 {
+	background: url('../images/bg5.jpg') no-repeat center top;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.gradient1 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1c47c8+0,010648+99 */
+	background: #1c47c8; /* Old browsers */
+	background: -moz-linear-gradient(left, #1c47c8 0%, #010648 99%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #1c47c8 0%,#010648 99%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #1c47c8 0%,#010648 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c47c8', endColorstr='#010648',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient2 {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a5ebd+0,2bc9ff+50,00e1e4+100 */
+	background: #0a5ebd; /* Old browsers */
+	background: -moz-linear-gradient(left, #0a5ebd 0%, #2bc9ff 50%, #00e1e4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #0a5ebd 0%,#2bc9ff 50%,#00e1e4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #0a5ebd 0%,#2bc9ff 50%,#00e1e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a5ebd', endColorstr='#00e1e4',GradientType=1 ); /* IE6-9 */
+}

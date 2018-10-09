@@ -1,0 +1,228 @@
+#community-rewards {
+    background: url('../images/bg6.jpg') no-repeat center top;
+
+    .link-community{
+        a{
+            border-radius: 40px;
+            margin:0 15px;
+            padding: 15px 40px;
+            &.btn-danger{
+                background: linear-gradient(60deg, $btn2-color1 10%, $btn2-color2);
+                border: none;
+            }
+            &.btn-primary{
+                background: linear-gradient(60deg, $btn1-color1 30%, $btn1-color2, $btn1-color3); 
+                border: none;
+            }
+        }
+    }
+    .container{
+        p:nth-child(2){
+            color: $cornflower_blue;
+        }
+    }
+    .chart {
+        height: 315px;
+        position: relative;
+        margin-bottom: 12px;
+        #community-rewards-chart {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 280px;
+            height: 280px;
+        }
+        .current-value { 
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            font-family: 'Open Sans',sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            color: $white;
+            letter-spacing: 0;
+            width: 145px;
+            margin: -25px 0 0 -60px;
+            text-align: center;
+            span:not(.value){
+                margin-left: -8px;
+            }
+        }
+    }
+    .community-chart .community-chart-list>li{
+        &:nth-child(2) div:before{
+            background-image: $gradient_deep_aqua;
+        }
+        &:nth-child(3) div:before{
+            background-image: $gradient_salem_chartreuse;
+        }
+        &:nth-child(4) div:before{
+            background-image: $gradient_persian_violet;
+        }
+        &:nth-child(5) div:before{
+            background-image: $gradient_helio_paris;
+        }
+        &:nth-child(6) div:before{
+            background-image: $gradient_cyan_blue;
+        }
+        div{
+            display: -ms-flexbox;
+            // display: flex;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-pack: justify;
+            // justify-content: space-between;
+            background: #002846;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 5px 16px 5px 54px;
+            margin: 10px 0;
+            cursor: pointer;
+            position: relative;
+            &:before{
+                content: '';
+                background-image : $gradient_yellow_interorange;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 12px;
+                top: 50%;
+                margin-top: -9px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                z-index: 1;
+            }
+        }
+    }
+    .community-chart-list {
+        // margin: 7% 15% 0 15%;
+        margin: 4% 5% 0 5%;
+        padding: 0;
+        list-style: none;
+        li {
+            color:$white;
+            font-family: $font-openSans;
+            font-size:14px;
+            font-weight: lighter;
+            ul{
+                li{
+                    margin: 17px 17px 17px 15px;
+                    flex-direction: row;
+                    text-align: left;
+                    flex-wrap: wrap;
+                    position: relative;   
+                    .name:before{
+                        content:"";
+                        display: block;
+                        border: 0.5px solid $btn1-color2;
+                        position: absolute;
+                        top: 10px;
+                        left: -35px;
+                        width: 6%;
+                    }                
+                }
+            }
+        }
+        li.active div{
+            color: red;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    #community-rewards{
+        .community-item-list {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 !important;
+            .chart{
+                width: 58%;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: -7%;
+                margin-left: -7%;
+            }
+            .community-chart-list{
+                width: 36%;
+                display: inline-block;
+                vertical-align: top;
+                margin: 4% 4% 0 5%;
+            }
+            .link-community{
+                margin-top: -11%;
+                margin-left: -40%;
+                a{
+                    border-radius: 40px;
+                    margin:0 15px;
+                    padding: 15px 20px;
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    #community-rewards{
+        .community-item-list{
+            margin: 0 12%;
+            .link-community{
+                margin-bottom: 10%;
+                a{
+                    margin: 15px;
+                }
+            }
+        } 
+    } 
+}
+
+@media screen and (max-width:991px){
+    #community-rewards{
+        .community-item-list{
+            margin: 0 12%;
+            .link-community{
+                margin-bottom: 10%;
+                a{
+                    margin: 15px;
+                }
+            }
+        } 
+    } 
+}
+
+@media screen and (min-width:1200px){
+    #community-rewards{
+        .community-item-list{
+            .link-community{
+                margin-top: -5.6% !important;
+            }
+        } 
+    } 
+}
+
+@media screen and (min-width:992px){
+    #community-rewards{
+        .community-item-list{
+            .link-community{
+                margin-top: -7%;
+                margin-left: -40%;
+                margin-bottom: 10%;
+                a{
+                    border-radius: 40px;
+                    margin:0 15px;
+                    padding: 15px 40px;
+                }
+            }
+        } 
+    } 
+}
+
+@media screen and (max-width:400px){
+    #community-rewards{
+        .community-item-list{
+            margin: 0!important;
+        } 
+    } 
+}

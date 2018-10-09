@@ -1,0 +1,96 @@
+#subscribe{
+    margin-top: -260px;
+    margin-left: 20px;
+    margin-right: 20px;
+    .subscribe-wrapper{
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-image: linear-gradient(90deg, $denim, $bright_turqoise);
+        border-radius: 20px;
+        margin: auto;
+        z-index: 99;
+        transform: translateY(165px);
+    }
+    input#email.form-control{
+        border-radius: 30px;
+        padding: 25px;
+        width: 100%;
+    }
+    .subscribe-information h2{
+        color: $deep-sapphire;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    .subscribe-information h3{
+        color: $white;
+        font-size: 12px;
+        font-weight: 200;
+        text-transform: none;
+    }
+    button.btn.btn-default{
+        margin-left: 30px;
+        padding: 12px;
+        width: 170px;
+        border-radius: 30px;
+        background-image: $gradient-btn2;
+        color: $white;
+    }
+    .subscribe-wrapper .subcsribe-form{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .subscribe-wrapper .subscribe-information{
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 576px){
+    input#email.form-control{
+        width: 100%; 
+    }
+    button.btn.btn-default{
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+    .subcsribe-form form.form-inline{
+        display: block !important;
+    }
+    .subscribe-wrapper .subscribe-information{
+        text-align: center;
+    }
+}
+@media(max-width: 768px){
+    .subscribe-wrapper .subscribe-information{
+        text-align: center;
+    }
+    button.btn.btn-default{
+        margin-left: 0px !important;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    .subcsribe-form form.form-inline{
+        display: block !important;
+    }
+}
+@media(max-width: 992px){
+    .subscribe-wrapper .subscribe-information{
+        text-align: center;
+    }
+    button.btn.btn-default{
+        margin-left: 0px !important;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    .subcsribe-form form.form-inline{
+        display: block !important;
+    }
+}
+
+@media(min-width: 1200px){
+    .form-group{
+        width: 65%;
+    }
+}

@@ -1,0 +1,18 @@
+#token-sale {
+    h3 {
+        text-transform: none;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    p:last-child{
+        .btn-danger{
+            background: $gradient-btn2;
+            border: 0;
+            border-radius: 20px;
+            padding: 10px 40px;
+        }
+    }
+}

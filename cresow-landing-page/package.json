@@ -1,0 +1,21 @@
+{
+  "name": "startgrunt",
+  "version": "0.0.1",
+  "description": "Learning Grunt and Sass",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "latest"
+  },
+  "dependencies": {
+    "grunt-bower-install": "^1.6.0",
+    "grunt-serve": "^0.1.6",
+    "moment": "^2.22.2",
+    "ruby": "^0.6.1"
+  }
+}

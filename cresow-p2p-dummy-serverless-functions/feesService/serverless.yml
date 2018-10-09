@@ -1,0 +1,33 @@
+service: feesService
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, self:custom.defaultStage}
+  profile: ${self:custom.profiles.${self:provider.stage}}
+  region: us-east-1
+  # environment:
+    # set environment variable to be accessed inside feesHandler.js file
+
+# variables
+custom:
+  defaultStage: dev
+  profiles:
+    dev: qwsEngineerDev
+    prod: qwsEngineerProd
+
+functions:
+  app:
+    handler: feesHandler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+  
+  
+  getFeesInfo:
+    handler: feesHandler.handler
+    events:
+      - http: 'GET /getFeesInfo'
+  
+  
+  

@@ -1,0 +1,23 @@
+{
+  "name": "listingService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "listingHandler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "crypto": "^1.0.1",
+    "crypto-price": "0.0.6",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "mysql": "^2.16.0",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "serverless-http": "^1.6.0"
+  }
+}

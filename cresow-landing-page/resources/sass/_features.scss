@@ -1,0 +1,27 @@
+#features {
+    .row:last-child{
+        .btn-danger{
+            background: $gradient-btn2;
+            padding: 10px 40px;
+            border-radius: 20px;
+            border: 0;
+        }
+    }
+    .feat {
+        margin-top: 50px;
+        padding: 40px;
+        border-radius: 25px;
+
+        &:hover {
+            background-color: $catalina_blue;
+        }
+
+        .img {
+            height: 85px;
+        }
+
+        .img, h3 {
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.modal-dialog {
+	margin-top: 140px !important;
+}
+
+.modal-header {
+	border-bottom: 0;
+}
+
+.modal-content {
+	color: black;
+	background: blue;
+}
+.login--new-user {
+	color: white;
+}
+
+.icon-user {
+	padding: 30px 0 60px;
+	max-width: 230px;
+	margin: 0 auto;
+}
+.icon-user img {
+	width: 100%;
+}
+
+.field--adjust-width,
+.button--adjust-width {
+	width: 100%;
+}
+
+.field--adjust-width {
+	padding-bottom: 10px;
+}
+
+.py-4 {
+	padding-top: 3.5rem !important;
+}
+
+.button--adjust-width button {
+	width: 100%;
+}
+
+.login--new-user {
+	font-size: 16px;
+}
+
+
+.close-video {
+	position: absolute !important;
+	right: -25px !important;
+	top: -28px !important;
+	color: white !important;
+}

@@ -1,0 +1,33 @@
+service: dashboardService
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, self:custom.defaultStage}
+  profile: ${self:custom.profiles.${self:provider.stage}}
+  region: us-east-1
+  # environment:
+    # set environment variable to be accessed inside dashboardHandler.js file
+
+# variables
+custom:
+  defaultStage: dev
+  profiles:
+    dev: qwsEngineerDev
+    prod: qwsEngineerProd
+
+functions:
+  app:
+    handler: dashboardHandler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+  
+  
+  getdashboardInfo:
+    handler: dashboardHandler.handler
+    events:
+      - http: 'GET /dashboard/{proxy+}'
+  
+  
+  

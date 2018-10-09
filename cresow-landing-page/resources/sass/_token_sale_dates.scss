@@ -1,0 +1,288 @@
+#token-sale-dates {
+    #presale-preview {
+        overflow: hidden;
+        position: relative;
+        .presale-phase, .ico-phase {
+            border-bottom: 1px dotted white;
+            margin: 0 20px;
+            text-indent: -15px;
+            color: $cornflower_blue;
+        }
+        .presale-phase {
+            width: calc(100%/6);
+        }
+
+        .ico-phase {
+            width: calc(58%*5/6);
+        }
+
+        .presale-timeline {
+            margin-top: 20px;
+            .presale-item {
+                margin: 0 20px 25px 0;
+                padding: 20px 0;
+            }
+
+            .past {
+                opacity: 0.3;
+            }
+            h4 {
+                font-family: 'Open Sans', serif;
+                font-weight: 600;
+                font-size: 18px;
+
+                &:after {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    position: absolute;
+                    right: 35px;
+                    top: -15px;
+                    background: linear-gradient(to bottom, $btn1-color2, $btn1-color1 100%);
+                    -moz-border-radius: 100%;
+                    -webkit-border-radius: 100%;
+                    border-radius: 100%;
+                }
+            }
+            h5 {
+                font-family: 'Open Sans', serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: $cornflower_blue;
+
+                &:after {
+                    content: '';
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    right: 29px;
+                    top: -21px;
+                    border: solid 3px gray;
+                    -moz-border-radius: 100%;
+                    -webkit-border-radius: 100%;
+                    border-radius: 100%;
+                }
+            }
+            h6 {
+                font-family: 'Open Sans', serif;
+                font-weight: 400;
+                font-size: 12px;
+
+                &:after {
+                    content: '';
+                    width: calc(100% - 135px);
+                    height: 2px;
+                    left: 70px;
+                    top: -10px;
+                    position: absolute;
+                    background: linear-gradient(to bottom, #27f0f0 0, #303395 100%);
+                }
+            }
+        }
+
+        .progress-line {
+            display: block;
+            background: gray;
+            border-radius: 4px;
+
+            width: 8px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 20px;
+            
+            .progress-status {
+                width: 8px;
+                height: 50%;
+                background: linear-gradient(to right, $btn2-color2 10%, $btn2-color1);
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: 3px;
+                    width: 20px;
+                    top: 50%;
+                    right: -5px;
+                    background: $btn2-color1;
+                    border-radius: 2px;
+                }
+            }
+
+            &:after {
+                content: '';
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: -5px;
+                left: -17px;
+                background: $gulf_blue;
+                background-image: url("../images/logo.png");
+                background-repeat: no-repeat;
+                background-size: 25px 25px;
+                background-position: center; 
+                -moz-border-radius: 100%;
+                -webkit-border-radius: 100%;
+                border-radius: 100%;
+            }
+        }
+    }
+    #presale-details {
+        .token-round-box {
+            background: rgba($color: $black, $alpha: 0.4);
+            border-radius: 20px;
+            min-height: 350px;
+            margin: 20px 0;
+
+            .token-round-box-header {
+                border-radius: 20px;
+                margin: 0;
+
+                h3 {
+                    color: $white;
+                    font-weight: 800;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                .header {
+                    width: 75%;
+                    background: $gradient-btn1;
+                    border-top-left-radius: 20px;
+                    padding: 20px;
+                    margin-right: -16px;
+                    font-family: 'Open Sans', serif;
+                }
+
+                .bonus {
+                    width: 25%;
+                    background: $gradient-btn2;
+                    border-top-right-radius: 20px;
+                    padding: 20px 25px;
+                    margin-left: -16px;
+                    font-family: 'Open Sans', serif;
+                    line-height: 20px;
+                }
+            }
+
+            .token-round-box-content {
+                padding: 20px 50px;
+                font-family: 'Open Sans', serif;
+                
+                h5{
+                    color: $cornflower_blue;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+
+                h5:before {
+                    left: -15px;
+                    content: "";
+                    background-color: #fff;
+                    width: 20px;
+                    height: 1.5px;
+                    position: absolute;
+                    margin: 9px 10px 0 0;
+                }
+                h6{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #token-sale-dates {
+        #presale-details{
+            .token-round-box {
+                .token-round-box-header {
+                    .header {
+                        width: calc(100% - 160px);
+                    }
+                    .bonus {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #token-sale-dates {
+        #presale-preview {
+            padding-bottom: 75px;
+            .presale-timeline {
+                margin: 36px;
+
+                .presale-item {
+                    margin: 25px 10px 0 0;
+                    padding: 0;
+                }
+                h4 {
+                    margin-bottom: 0;
+
+                    &:after {
+                        right: -10px;
+                        top: 35px;
+                    }
+                }
+
+                h5 {
+                    &:after {
+                        right: -16px;
+                        top: 28px;
+                    }
+                }
+                h6 {
+                    margin: 50px 0;
+
+                    &:after {
+                        width: 3px;
+                        height: 120px;
+                        left: 180px;
+                        top: 65px;
+                    }
+                }
+            }
+
+            .progress-line {
+                width: 100%;
+                height: 8px;
+                position: relative;
+                top: 0;
+                left: 0;
+
+                .progress-status {
+                    width: 34%;
+                    height: 8px;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: 4px;
+
+                    &:after {
+                        right: 66%;
+                        width: 2px;
+                        height: 20px;
+                        margin-top: -10px;
+                    }
+                }
+
+                &:after {
+                    width: 40px;
+                    height: 40px;
+                    bottom: -15px;
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
