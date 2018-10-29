@@ -1,0 +1,193 @@
+.dashboard-body {
+    .left-content {
+        .box {
+            border-radius: 10px;
+            border: 0;
+            overflow: hidden;
+            &:first-child{
+                .box-header{
+                    display: flex;
+                    .box-title{
+                        order: 2;
+                    }
+                }
+                .box-body{
+                    padding: 18px;
+                    h3{
+                        color: #01226F;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .box-header {
+                padding:20px;
+                background-color: #01226F;
+                h3{
+                    color: white;
+                    font-weight: bold;
+                }
+                img{
+                    height: 25px;
+                    width: 90px;
+                    order: 1;
+                }
+                &>.box-tools{
+                    top:0px;
+                    right:0;
+                    .sub-title {
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: white;
+                        padding-right: 10px;
+                    }
+                    .refresh-btn{
+                        color: white;
+                        background-color: #294EA5;
+                        padding: 13.5px 15px;
+                        font-size: 22px;
+                        border-radius: 0px;
+                    }
+                }
+            }
+            .box-body{
+                table{
+                    tbody{
+                        tr{
+                            &>td{
+                                font-size: 16px;
+                                vertical-align: middle;
+                                &:first-of-type{
+                                    span {
+                                        width: 55px;
+                                        display: block;
+                                        text-align: center;
+                                        border-radius: 10px;
+                                        text-transform: uppercase;
+                                        padding: 4px 0;
+                                        border: 1px solid #43425D;
+                                        border: none;
+                                        a {
+                                            color: #01226F;
+                                        }
+                                        &.buy-price{
+                                            background-color: #E11482;
+                                        }
+                                        &.sell-price{
+                                            background-color: #026EBB;
+                                        }
+                                    }
+                                }
+                                &:nth-child(2){
+                                    font-weight: bold;
+                                }
+                                &:last-child{
+                                    span {
+                                        width: 100px;
+                                        display: block;
+                                        text-align: center;
+                                        border-radius: 10px;
+                                        text-transform: uppercase;
+                                        padding: 8px 0;
+                                        border: 1px solid #43425D;
+                                        background-color: #2979FF;
+                                        border:none;
+                                        a {
+                                            color: white;
+                                        }
+                                        &.buy-action{
+                                            background-color: #FD3DA2;
+                                        }
+                                        &.sell-action{
+                                            background-color: #2979FF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                nav{
+                    float: right;
+                    ul {
+                        &>li.active{
+                            a{
+                                background-color: #01226F;
+                                color: white;       
+                            }
+                        }
+                        &>li{
+                            a{
+                                color: #01226F;
+                                border-color: #01226F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right-content {
+        .box {
+            border-top: 3px solid #01226F;
+            &:nth-child(3){
+                border-top-color: #2979FF;
+            }
+            &:last-child{
+                border-top-color: #FD3DA2;
+            }
+            .box-header{
+                padding: 20px;
+                h3{
+                    font-size:18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                span{
+                    font-size: 18px;
+                }
+            }
+            .box-body{
+                padding: 20px;
+                .home-recent-widget {
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    max-height: 100px;
+                    .row{
+                        div:first-of-type, div:nth-child(2){
+                            font-size: 18px;
+                            font-weight: bold;
+                            &.buy{
+                                color: #2979FF;
+                            }
+                            &.sell{
+                                color: #FD3DA2;
+                            }
+                        }
+                        div:last-child{
+                            font-size: 18px;
+                        }
+                        .time {
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .sub-title{
+        padding-right: 0 !important;
+        word-break: break-word;
+        max-width: 92px;
+    }
+    .refresh-btn {
+        padding: 16.5px 15px !important;
+        font-size: 18px !important;
+    }
+}
+

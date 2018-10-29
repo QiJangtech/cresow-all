@@ -1,0 +1,29 @@
+.main-sidebar {
+  @media screen and (max-width: 767px){
+    padding-top: 110px !important;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 65px;
+  }
+  background-color: #01226F !important;
+}
+
+.sidebar-menu {
+  li > a {
+    padding: 12px 30px;
+    color: white !important;
+    &:hover{
+      color: #01226F !important;
+      background-color: white !important;
+    }
+    i{
+      margin-right: 10px;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}

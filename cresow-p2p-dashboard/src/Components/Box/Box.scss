@@ -1,0 +1,23 @@
+.tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+    border-right: 1px solid #ddd;
+    &>li {
+        float: none;
+        margin-right: -1px;
+        margin-bottom: 2px;
+        a{
+            border-radius: 4px 0 0 4px;
+            margin-right: 0;
+            display:block;
+        }
+    }
+    &>li.active>a,
+    &>li.active>a:hover,
+    &>li.active>a:focus {
+        border-bottom-color: #ddd;
+        border-right-color: transparent;
+    }
+}
+
+  

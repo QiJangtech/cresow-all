@@ -1,0 +1,82 @@
+.main-header > .navbar, .main-header > .logo{
+    background-color: #01226F !important;
+}
+
+.brand-logoimage{
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+
+.navbar-custom-menu>ul>li {
+    display: none;
+    &:last-child {
+        display: block;
+    }
+}
+.dropdown {
+    min-width: 150px;
+    .dropdown-toggle>span {
+        margin-left: 10px;
+    }
+    .dropdown-menu {
+        width: 100% !important;
+        min-width: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        .menu>li>a {
+            border: none !important;
+            padding: 10px 15px !important;
+            h4 {
+                margin: 0 0 0 25px !important;
+            }
+        }
+
+        .menu>li:last-child>a:hover {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+    }
+    .user-image {
+        float: left;
+        height: 25px;
+        margin-top: -2px;
+    }
+
+    .dropdown-image {
+        width: auto !important;
+        height: 25px !important;
+    }
+}
+
+.sidebar-toggle {
+    display: block;
+}
+
+.control-sidebar {
+    .dropdown, .dropdown li {
+        list-style: none;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-toggle {
+        display: none;
+    }
+
+    .navbar-custom-menu>ul>li {
+        display: block;
+        &:last-child {
+            display: none;
+        }
+    }
+
+    .control-sidebar, .control-sidebar-bg {
+        display: none;
+    }
+}

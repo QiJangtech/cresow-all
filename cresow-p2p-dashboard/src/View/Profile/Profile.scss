@@ -1,0 +1,82 @@
+.profile-header {
+    padding-left: 30px;
+    padding-right: 30px;
+    h3{
+        color: #01226F;
+        font-weight: bold;
+    }
+}
+
+.profile-body {
+    .column-body {
+        padding-left: 30px;
+        padding-right: 30px;
+        .box {
+            border-radius: 10px;
+            overflow: hidden;
+            border: none; 
+            label{
+                color: #01226F;
+                font-size: 16px;
+            }           
+            .box-header{
+                padding: 20px;
+                background-color: #01226F;
+                h3{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                }
+                .box-tools{
+                    button{
+                        background-color: #01226F;
+                        padding: 15px;
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+            }
+            &:first-child{
+                .box-body {
+                    padding: 20px;
+                    p{
+                        &.unapproved{
+                            color: #E11482;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                form{
+                    .row{
+                        margin: 10px -15px 25px -15px;
+                        .form-group{
+                            margin-left: -5px;
+                            input[type="text"]{
+                                margin-top: 20px;
+                                border: none;
+                                border-bottom: 1px solid #01226F;
+                                padding: 6px 0;
+                            }
+                            .help-block{
+                                color: #98ABB3;
+                            }
+                            ul{
+                                padding: 0 0 0 17px;
+                            }
+                        }
+                    }
+                    .text-right{
+                        .btn{
+                            background-color: #2979FF;
+                            padding: 10px 41px;
+                            border-radius:10px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
