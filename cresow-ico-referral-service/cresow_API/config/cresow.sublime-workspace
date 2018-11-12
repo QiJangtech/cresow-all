@@ -1,0 +1,800 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pass",
+				"password"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application.rb",
+			"settings":
+			{
+				"buffer_size": 2083,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/Gemfile",
+			"settings":
+			{
+				"buffer_size": 1747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes.rb",
+			"settings":
+			{
+				"buffer_size": 372,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "initializers/doorkeeper.rb",
+			"settings":
+			{
+				"buffer_size": 9001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 4800,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/referral_records_controller.rb",
+			"settings":
+			{
+				"buffer_size": 4879,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database.yml",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "initializers/new_framework_defaults_5_2.rb",
+			"settings":
+			{
+				"buffer_size": 1946,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/models/referral_record.rb",
+			"settings":
+			{
+				"buffer_size": 2482,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 1829,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/.env",
+			"settings":
+			{
+				"buffer_size": 133,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/config",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/config/initializers",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db/migrate"
+	],
+	"file_history":
+	[
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db/migrate/20181003032143_change_data_type_referrals.rb",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db/migrate/20181003025418_change_data_type.rb",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/referral_records_controller.rb",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db/migrate/20181003013935_more_attributes_referral_records.rb",
+		"/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/db/migrate/20181002085300_create_referral_records.rb",
+		"/usr/share/nginx/html/cresow_API/db/migrate/20181002042538_add_parent_root.rb",
+		"/usr/share/nginx/html/cresow_API/config/initializers/new_framework_defaults_5_2.rb",
+		"/usr/share/nginx/html/cresow_API/db/migrate/20181002025829_referral_id_to_users.rb",
+		"/usr/share/nginx/html/cresow_API/db/migrate/20181002025509_add_parent_to_users.rb",
+		"/usr/share/nginx/html/cresow_API/db/migrate/20181002024540_devise_create_users.rb",
+		"/usr/share/nginx/html/cresow_API/db/migrate/20181002023726_create_doorkeeper_tables.rb",
+		"/usr/share/nginx/html/cresow_API/config/environments/development.rb",
+		"/usr/share/nginx/html/cresow_API/config/environments/production.rb",
+		"/usr/share/nginx/html/cresow_API/config/environments/test.rb",
+		"/usr/share/nginx/html/cresow_API/.env",
+		"/usr/share/nginx/html/landbnb/app/models/movie.rb",
+		"/usr/share/nginx/html/landbnb/app/graphql/types/mutation_type.rb",
+		"/usr/share/nginx/html/landbnb/db/migrate/20180928145039_add_movie_id_to_reviews.rb",
+		"/usr/share/nginx/html/landbnb/db/migrate/20180928144541_fix_table_reviews.rb",
+		"/usr/share/nginx/html/landbnb/app/models/review.rb",
+		"/usr/share/nginx/html/landbnb/app/graphql/landbnb_schema.rb",
+		"/usr/share/nginx/html/landbnb/config/routes.rb",
+		"/usr/share/nginx/html/landbnb/app/controllers/private_controller.rb",
+		"/usr/share/nginx/html/landbnb/app/controllers/public_controller.rb",
+		"/usr/share/nginx/html/landbnb/lib/json_web_token.rb",
+		"/usr/share/nginx/html/landbnb/app/controllers/complicates_controller.rb"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bonus_result[\"percentage\"] = (",
+			"decimal",
+			" * amount_eth",
+			"bonus_result[\"bonus\"] = (",
+			"string",
+			"customers",
+			"bonus_result[\"bonus\"]",
+			"users",
+			"level",
+			"user_id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1061,
+								1061
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "initializers/doorkeeper.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7814,
+								7814
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2428.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/application_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								369
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/users_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3489,
+								3489
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/controllers/referral_records_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4879,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1476,
+								1476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "database.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1623,
+								1623
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "initializers/new_framework_defaults_5_2.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1946,
+								1946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/models/referral_record.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/app/models/user.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1796,
+								1796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/usr/share/nginx/html/cresow-ico-referral-service/cresow_API/.env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cresow.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"doo",
+				"config/initializers/doorkeeper.rb"
+			],
+			[
+				"application_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"referra",
+				"app/controllers/referral_records_controller.rb"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"refe",
+				"app/models/referral_record.rb"
+			],
+			[
+				"refer",
+				"app/controllers/referral_records_controller.rb"
+			],
+			[
+				"referr",
+				"app/models/referral_record.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"application.rb",
+				"config/application.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"",
+				"app/models/user.rb"
+			],
+			[
+				"users_con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"environ",
+				"config/environments/test.rb"
+			],
+			[
+				"environments/",
+				"config/environments/development.rb"
+			],
+			[
+				"door",
+				"config/initializers/doorkeeper.rb"
+			],
+			[
+				"config/app",
+				"config/application.rb"
+			],
+			[
+				"orders_con",
+				"lds_api/app/controllers/orders_controller.rb"
+			],
+			[
+				"mut",
+				"app/graphql/types/mutation_type.rb"
+			],
+			[
+				"movie",
+				"app/models/movie.rb"
+			],
+			[
+				"re",
+				"app/graphql/types/review_type.rb"
+			],
+			[
+				"revi",
+				"app/models/review.rb"
+			],
+			[
+				"graph",
+				"app/controllers/graphql_controller.rb"
+			],
+			[
+				"LandbnbSchema",
+				"app/graphql/landbnb_schema.rb"
+			],
+			[
+				"pri",
+				"app/controllers/private_controller.rb"
+			],
+			[
+				"pub",
+				"app/controllers/public_controller.rb"
+			],
+			[
+				"comp",
+				"app/controllers/complicates_controller.rb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 363.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

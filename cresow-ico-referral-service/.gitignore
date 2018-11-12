@@ -1,0 +1,13 @@
+# Ignore bundler config.
+/cresow_API/.bundle
+
+# Ignore all logfiles and tempfiles.
+/cresow_API/log/*
+!/cresow_API/log/.keep
+/cresow_API/tmp
+
+# Ignore Bundle Gems
+/cresow_API/vendor/bundle
+/cresow_API/bin
+/cresow_API/vendor
+/cresow_API/.env
